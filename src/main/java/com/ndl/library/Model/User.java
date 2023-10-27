@@ -2,10 +2,18 @@ package com.ndl.library.Model;
 
 import java.sql.Date;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import lombok.Data;
 
 @Entity
-public class Member {
+@Data
+@Table(name = "user")
+public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     private int id;
@@ -16,15 +24,27 @@ public class Member {
 
     private Date birthday;
 
-    private Card card;
+    private String address;
 
-    public Member() {
+    @Column(name = "phonenumber")
+    private String phone;
+
+    private String gender;
+
+    private String idnumber;
+
+    public User() {
     }
 
-    public Member(String email, String name, Date birthday) {
+    public User(String email, String name, Date birthday, String address, String phone, String gender,
+            String idnumber) {
         this.email = email;
         this.name = name;
         this.birthday = birthday;
+        this.address = address;
+        this.phone = phone;
+        this.gender = gender;
+        this.idnumber = idnumber;
     }
 
     public int getId() {
@@ -59,13 +79,4 @@ public class Member {
         this.birthday = birthday;
     }
 
-    public Card getCard() {
-        return card;
-    }
-
-    public void setCard(Card card) {
-        this.card = card;
-    }
-
-    
 }

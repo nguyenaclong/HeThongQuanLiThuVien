@@ -1,31 +1,40 @@
 package com.ndl.library.Model;
 
+import java.sql.Date;
+
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.Data;
 
 @Entity
 @Table(name = "author")
+@Data
 public class Author {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     private int id;
 
+    @Column(name = "name")
     private String name;
 
-    private int age;
-    
-    private String country;
+    private Date birthday;
+
+    private Date endday;
+
+    private String nationality;
 
     public Author() {
     }
 
-    public Author(String name, int age, String country) {
+    public Author(String name, Date birthday, Date endday, String nationality) {
         this.name = name;
-        this.age = age;
-        this.country = country;
+        this.birthday = birthday;
+        this.endday = endday;
+        this.nationality = nationality;
     }
 
     public int getId() {
@@ -44,21 +53,27 @@ public class Author {
         this.name = name;
     }
 
-    public int getAge() {
-        return age;
+    public Date getBirthday() {
+        return birthday;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setBirthday(Date birthday) {
+        this.birthday = birthday;
     }
 
-    public String getCountry() {
-        return country;
+    public Date getEndday() {
+        return endday;
     }
 
-    public void setCountry(String country) {
-        this.country = country;
+    public void setEndday(Date endday) {
+        this.endday = endday;
     }
 
-    
+    public String getNationality() {
+        return nationality;
+    }
+
+    public void setNationality(String nationality) {
+        this.nationality = nationality;
+    }
 }
