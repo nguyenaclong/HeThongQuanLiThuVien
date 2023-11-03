@@ -1,30 +1,27 @@
 // package com.ndl.library.Model;
 
+// import jakarta.persistence.Column;
 // import jakarta.persistence.Entity;
 // import jakarta.persistence.GeneratedValue;
 // import jakarta.persistence.GenerationType;
 // import jakarta.persistence.Id;
 // import jakarta.persistence.Table;
-// import lombok.Data;
 
 // @Entity
-// @Table(name = "publisher")
-// @Data
-// public class Publisher {
-//     @GeneratedValue(strategy = GenerationType.IDENTITY)
+// @Table(name = "genre")
+// public class Genre {
 //     @Id
+//     @GeneratedValue(strategy = GenerationType.IDENTITY)
 //     private int id;
 
+//     @Column(name = "name", unique = true)
 //     private String name;
 
-//     private String address;
-
-//     public Publisher() {
+//     public Genre() {
 //     }
 
-//     public Publisher(String name, String address) {
+//     public Genre(String name) {
 //         this.name = name;
-//         this.address = address;
 //     }
 
 //     public int getId() {
@@ -43,11 +40,4 @@
 //         this.name = name;
 //     }
 
-//     public String getAddress() {
-//         return address;
-//     }
-
-//     public void setAddress(String address) {
-//         this.address = address;
-//     }
 // }

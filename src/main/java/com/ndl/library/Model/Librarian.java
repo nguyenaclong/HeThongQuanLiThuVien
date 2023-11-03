@@ -1,8 +1,8 @@
-package com.ndl.library.Model;
+// package com.ndl.library.Model;
 
-import jakarta.persistence.Entity;
+// import jakarta.persistence.Entity;
 
-@Entity
-public class Librarian extends User {
+// @Entity
+// public class Librarian extends User {
 
-}
+// }
