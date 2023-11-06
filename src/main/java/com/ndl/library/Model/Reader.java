@@ -1,8 +1,8 @@
-// package com.ndl.library.Model;
+package com.ndl.library.Model;
 
-// import jakarta.persistence.*;
+import jakarta.persistence.*;
 
-// @Entity
-// public class Reader extends User{
+@Entity
+public class Reader extends User{
     
-// }
+}

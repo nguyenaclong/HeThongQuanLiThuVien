@@ -1,9 +1,9 @@
-// package com.ndl.library.Repository;
+package com.ndl.library.Repository;
 
-// import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-// import com.ndl.library.Model.Author;
+import com.ndl.library.Model.Author;
 
-// public interface AuthorRepository extends CrudRepository<Author, Integer> {
+public interface AuthorRepository extends JpaRepository<Author, Integer> {
 
-// }
+}

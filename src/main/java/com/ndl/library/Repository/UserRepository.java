@@ -1,9 +1,9 @@
-// package com.ndl.library.Repository;
+package com.ndl.library.Repository;
 
-// import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-// import com.ndl.library.Model.User;
+import com.ndl.library.Model.User;
 
-// public interface UserRepository extends CrudRepository<User, Integer> {
+public interface UserRepository extends JpaRepository<User, Integer> {
 
-// }
+}

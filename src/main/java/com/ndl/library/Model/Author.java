@@ -1,82 +1,80 @@
-// package com.ndl.library.Model;
+package com.ndl.library.Model;
 
-// import java.sql.Date;
+import java.sql.Date;
 
-// import jakarta.persistence.Column;
-// import jakarta.persistence.Entity;
-// import jakarta.persistence.GeneratedValue;
-// import jakarta.persistence.GenerationType;
-// import jakarta.persistence.Id;
-// import jakarta.persistence.Table;
-// import lombok.Data;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
-// @Entity
-// @Table(name = "author")
-// @Data
-// public class Author {
-//     @GeneratedValue(strategy = GenerationType.IDENTITY)
-//     @Id
-//     private int id;
+@Entity
+@Table(name = "author")
+public class Author {
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    private int id;
 
-//     @Column(name="name")
-//     private String name;
+    @Column(name="name")
+    private String name;
 
-//     @Column(name="birthday")
-//     private Date birthday;
+    @Column(name="birthday")
+    private Date birthday;
 
-//     @Column(name="endday")
-//     private Date endday;
+    @Column(name="endday")
+    private Date endday;
 
-//     @Column(name="nationality")
-//     private String nationality;
+    @Column(name="nationality")
+    private String nationality;
 
-//     public Author() {
-//     }
+    public Author() {
+    }
 
-//     public Author(String name, Date birthday, Date endday, String nationality) {
-//         this.name = name;
-//         this.birthday = birthday;
-//         this.endday = endday;
-//         this.nationality = nationality;
-//     }
+    public Author(String name, Date birthday, Date endday, String nationality) {
+        this.name = name;
+        this.birthday = birthday;
+        this.endday = endday;
+        this.nationality = nationality;
+    }
 
-//     public int getId() {
-//         return id;
-//     }
+    public int getId() {
+        return id;
+    }
 
-//     public void setId(int id) {
-//         this.id = id;
-//     }
+    public void setId(int id) {
+        this.id = id;
+    }
 
-//     public String getName() {
-//         return name;
-//     }
+    public String getName() {
+        return name;
+    }
 
-//     public void setName(String name) {
-//         this.name = name;
-//     }
+    public void setName(String name) {
+        this.name = name;
+    }
 
-//     public Date getBirthday() {
-//         return birthday;
-//     }
+    public Date getBirthday() {
+        return birthday;
+    }
 
-//     public void setBirthday(Date birthday) {
-//         this.birthday = birthday;
-//     }
+    public void setBirthday(Date birthday) {
+        this.birthday = birthday;
+    }
 
-//     public Date getEndday() {
-//         return endday;
-//     }
+    public Date getEndday() {
+        return endday;
+    }
 
-//     public void setEndday(Date endday) {
-//         this.endday = endday;
-//     }
+    public void setEndday(Date endday) {
+        this.endday = endday;
+    }
 
-//     public String getNationality() {
-//         return nationality;
-//     }
+    public String getNationality() {
+        return nationality;
+    }
 
-//     public void setNationality(String nationality) {
-//         this.nationality = nationality;
-//     }
-// }
+    public void setNationality(String nationality) {
+        this.nationality = nationality;
+    }
+}

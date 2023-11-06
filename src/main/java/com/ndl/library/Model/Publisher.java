@@ -1,53 +1,51 @@
-// package com.ndl.library.Model;
+package com.ndl.library.Model;
 
-// import jakarta.persistence.Entity;
-// import jakarta.persistence.GeneratedValue;
-// import jakarta.persistence.GenerationType;
-// import jakarta.persistence.Id;
-// import jakarta.persistence.Table;
-// import lombok.Data;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
-// @Entity
-// @Table(name = "publisher")
-// @Data
-// public class Publisher {
-//     @GeneratedValue(strategy = GenerationType.IDENTITY)
-//     @Id
-//     private int id;
+@Entity
+@Table(name = "publisher")
+public class Publisher {
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    private int id;
 
-//     private String name;
+    private String name;
 
-//     private String address;
+    private String address;
 
-//     public Publisher() {
-//     }
+    public Publisher() {
+    }
 
-//     public Publisher(String name, String address) {
-//         this.name = name;
-//         this.address = address;
-//     }
+    public Publisher(String name, String address) {
+        this.name = name;
+        this.address = address;
+    }
 
-//     public int getId() {
-//         return id;
-//     }
+    public int getId() {
+        return id;
+    }
 
-//     public void setId(int id) {
-//         this.id = id;
-//     }
+    public void setId(int id) {
+        this.id = id;
+    }
 
-//     public String getName() {
-//         return name;
-//     }
+    public String getName() {
+        return name;
+    }
 
-//     public void setName(String name) {
-//         this.name = name;
-//     }
+    public void setName(String name) {
+        this.name = name;
+    }
 
-//     public String getAddress() {
-//         return address;
-//     }
+    public String getAddress() {
+        return address;
+    }
 
-//     public void setAddress(String address) {
-//         this.address = address;
-//     }
-// }
+    public void setAddress(String address) {
+        this.address = address;
+    }
+}
