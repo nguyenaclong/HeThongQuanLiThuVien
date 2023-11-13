@@ -1,42 +1,41 @@
-// package com.ndl.library.Model;
+package com.ndl.library.Model;
 
-// import jakarta.persistence.Column;
-// import jakarta.persistence.Entity;
-// import jakarta.persistence.GeneratedValue;
-// import jakarta.persistence.GenerationType;
-// import jakarta.persistence.Id;
-// import jakarta.persistence.Table;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
-// @Entity
-// @Table(name = "genre")
-// public class Genre {
-//     @Id
-//     @GeneratedValue(strategy = GenerationType.IDENTITY)
-//     private int id;
+@Entity
+@Table(name = "genre")
+public class Genre {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
 
-//     private String name;
+    private String name;
 
-//     public Genre() {
-//     }
+    public Genre() {
+    }
 
-//     public Genre(String name) {
-//         this.name = name;
-//     }
+    public Genre(String name) {
+        this.name = name;
+    }
 
-//     public int getId() {
-//         return id;
-//     }
+    public int getId() {
+        return id;
+    }
 
-//     public void setId(int id) {
-//         this.id = id;
-//     }
+    public void setId(int id) {
+        this.id = id;
+    }
 
-//     public String getName() {
-//         return name;
-//     }
+    public String getName() {
+        return name;
+    }
 
-//     public void setName(String name) {
-//         this.name = name;
-//     }
+    public void setName(String name) {
+        this.name = name;
+    }
 
-// }
+}
