@@ -1,9 +1,11 @@
-// package com.ndl.library.Repository;
+package com.ndl.library.Repository;
 
-// import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-// import com.ndl.library.Model.Book;
+import com.ndl.library.Model.Book;
 
-// public interface BookRepository extends JpaRepository<Book, Integer> {
+@Repository
+public interface BookRepository extends JpaRepository<Book, Integer> {
 
-// }
+}
